@@ -88,11 +88,11 @@ mod test {
     const INPUT_P2: &str = include_str!("testInput/day3p2.txt");
     #[test]
     fn test_part1() {
-        assert_eq!(11, super::part1(INPUT_P1));
+        assert_eq!(161, super::part1(INPUT_P1));
     }
 
     #[test]
     fn test_part2() {
-        assert_eq!(31, super::part2(INPUT_P2));
+        assert_eq!(48, super::part2(INPUT_P2));
     }
 }

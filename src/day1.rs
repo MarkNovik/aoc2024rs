@@ -1,9 +1,10 @@
 use std::collections::HashMap;
 use std::iter::zip;
+use itertools::sorted;
 
 pub fn part1(input: &str) -> u64 {
     let (left, right) = parse_input(input);
-    zip(left, right).map(|(a, b)| a.abs_diff(b)).sum()
+    zip(sorted(left), sorted(right)).map(|(a, b)| a.abs_diff(b)).sum()
 }
 
 pub fn part2(input: &str) -> u64 {
