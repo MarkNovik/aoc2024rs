@@ -3,6 +3,7 @@ mod day2;
 mod drop_at;
 mod day3;
 mod day4;
+mod day5;
 
 use std::time::{Duration, Instant};
 
@@ -26,6 +27,7 @@ fn main() {
     run!(day2);
     run!(day3);
     run!(day4);
+    run!(day5);
 }
 
 fn time<T>(f: impl FnOnce() -> T) -> (T, Duration) {
