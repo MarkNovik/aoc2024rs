@@ -32,6 +32,8 @@ fn main() {
     run!(day4);
     run!(day5);
     run!(day6);
+    run!(day7);
+    run!(day8);
 }
 
 fn time<T>(f: impl FnOnce() -> T) -> (T, Duration) {
